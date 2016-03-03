@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Water Store</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="formChecker.js" ></script>
+</head>
+
+
+
+<form action="customerBackend.php" onsubmit="return validation(this)" method="GET">
+<table id="table1">
+    <tr>
+        <td>
+            <div id="sewage">
+                <h3>bottles of sewage water</h3>
+                <p>how many do you want?($5)</p>
+                <input type="text" name="item1">
+            </div>
+
+        </td>
+        <td>
+            <div id="bath">
+                <h3>bottles of bath water</h3>
+                <p>how many do you want?($10)</p>
+                <input type="text" name="item2">
+            </div>
+
+        </td>
+        <td>
+            <div id="glacier">
+                <h3>bottles of glacier water</h3>
+                <p>how many do you want?($20)</p>
+                <input type="text" name="item3">
+            </div>
+
+        </td>
+
+    </tr>
+<tr>
+    <td>
+    <div id="shipping">
+        <h3>Choose a shipping option</h3>
+        <input type="radio" name="item4" value="0" id="ship1">Free seven day<br>
+        <input type="radio" name="item4" value="5" id="ship2">$5 day<br>
+        <input type="radio" name="item4" value="50" id="ship3">Overnight Shipping<br>
+</div>
+
+
+</td>
+    <td>
+        <div id="useandpass"></div>
+        <h3>Username:</h3>
+        <input type="text" name="username" id="username">
+        <h3>Password:</h3>
+        <input type="text" name="password" id="password">
+    </td>
+</tr>
+    </div>
+
+</table>
+<button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button>
+</form>
+
+</html>
